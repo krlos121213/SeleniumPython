@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-03-20 11:17:34</p>
-                <p class='attribute'><strong>Duration: </strong>54.317s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 7</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-03-20 14:37:15</p>
+                <p class='attribute'><strong>Duration: </strong>53.378s</p>
+                <p class='attribute'><strong>Status: </strong>Pass: 1, Error: 6</p>
             </div>
         </div>
         <div class="row">
@@ -28,19 +28,6 @@
                     <tbody>
                         
                             <tr class='success'>
-                                <td class="col-xs-9">test_banner_images (__main__.HomePageTest)</td>
-                                <td class="col-xs-3">
-                                    <span class="label label-success">
-                                        
-                                            Pass
-                                        
-                                    </span>
-                                    
-                                </td>
-                            </tr>
-                            
-                        
-                            <tr class='success'>
                                 <td class="col-xs-9">test_search_button_enabled (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
                                     <span class="label label-success">
@@ -53,69 +40,261 @@
                             </tr>
                             
                         
-                            <tr class='success'>
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_banner_images (__main__.HomePageTest)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>WebDriverException</p>
+                                        <p>Message: disconnected: received Inspector.detached event
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DE8F47]
+	(No symbol) [0x00DE8ADB]
+	(No symbol) [0x00DE7F65]
+	(No symbol) [0x00DE7EFC]
+	(No symbol) [0x00DE6BF6]
+	(No symbol) [0x00DE747A]
+	(No symbol) [0x00DFC6A4]
+	(No symbol) [0x00DF71C0]
+	(No symbol) [0x00DF6D01]
+	(No symbol) [0x00DF756C]
+	(No symbol) [0x00DF7850]
+	(No symbol) [0x00E1FDF8]
+	(No symbol) [0x00E203AB]
+	(No symbol) [0x00E4EE62]
+	(No symbol) [0x00E3AF14]
+	(No symbol) [0x00E4D57C]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_search_text_field (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
                                     
                                 </td>
                             </tr>
                             
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>NoSuchWindowException</p>
+                                        <p>Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DDD0D3]
+	(No symbol) [0x00E3EA8B]
+	(No symbol) [0x00E4D093]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_search_text_field_by_class_name (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
                                     
                                 </td>
                             </tr>
                             
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>WebDriverException</p>
+                                        <p>Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DE6DBB]
+	(No symbol) [0x00DE747A]
+	(No symbol) [0x00DE7418]
+	(No symbol) [0x00DDF53C]
+	(No symbol) [0x00DDE546]
+	(No symbol) [0x00DDDFCE]
+	(No symbol) [0x00E5BF39]
+	(No symbol) [0x00E3AECC]
+	(No symbol) [0x00E4D57C]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_search_text_field_by_name (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
                                     
                                 </td>
                             </tr>
                             
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>ProtocolError</p>
+                                        <p>('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))</p>
+                                    </td>
+                                </tr>
+                            
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_shopping_cart (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
                                     
                                 </td>
                             </tr>
                             
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>WebDriverException</p>
+                                        <p>Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DE6DBB]
+	(No symbol) [0x00DE747A]
+	(No symbol) [0x00DE7418]
+	(No symbol) [0x00DDF53C]
+	(No symbol) [0x00DDE546]
+	(No symbol) [0x00DDDFCE]
+	(No symbol) [0x00E5BF39]
+	(No symbol) [0x00E3AECC]
+	(No symbol) [0x00E4D57C]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+</p>
+                                    </td>
+                                </tr>
+                            
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_vip_promo (__main__.HomePageTest)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
                                     
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
                                 </td>
                             </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>ProtocolError</p>
+                                        <p>('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))</p>
+                                    </td>
+                                </tr>
                             
                         
                         <tr>
@@ -123,7 +302,7 @@
                                Total Test Runned: 7
                             </td>
                             <td>
-                                <span>Pass: 7</span>
+                                <span>Pass: 1, Error: 6</span>
                             </td>
                         </tr>
                     </tbody>

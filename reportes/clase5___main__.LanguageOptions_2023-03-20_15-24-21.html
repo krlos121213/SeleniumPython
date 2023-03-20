@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-03-20 15:24:21</p>
+                <p class='attribute'><strong>Duration: </strong>6.96 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LanguageOptions</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_select_language</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DF76FB]
+	(No symbol) [0x00DF75D0]
+	(No symbol) [0x00DF7850]
+	(No symbol) [0x00E1FDF8]
+	(No symbol) [0x00E203AB]
+	(No symbol) [0x00E18AE1]
+	(No symbol) [0x00E3AF14]
+	(No symbol) [0x00E18726]
+	(No symbol) [0x00E3B224]
+	(No symbol) [0x00E4D57C]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "d:\Automatizacion programas\SeleniumPython\clase5\select_language.py", line 40, in test_select_language
+    select_language.select_by_visible_text('German')
+  File "C:\Users\Carlos Zapata\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\support\select.py", line 111, in select_by_visible_text
+    opts = self._el.find_elements(By.XPATH, xpath)
+  File "C:\Users\Carlos Zapata\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 456, in find_elements
+    return self._execute(Command.FIND_CHILD_ELEMENTS, {"using": by, "value": value})["value"]
+  File "C:\Users\Carlos Zapata\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webelement.py", line 410, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Carlos Zapata\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 444, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Carlos Zapata\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=111.0.5563.65)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x00F4DCE3]
+	(No symbol) [0x00EE39D1]
+	(No symbol) [0x00DF4DA8]
+	(No symbol) [0x00DF76FB]
+	(No symbol) [0x00DF75D0]
+	(No symbol) [0x00DF7850]
+	(No symbol) [0x00E1FDF8]
+	(No symbol) [0x00E203AB]
+	(No symbol) [0x00E18AE1]
+	(No symbol) [0x00E3AF14]
+	(No symbol) [0x00E18726]
+	(No symbol) [0x00E3B224]
+	(No symbol) [0x00E4D57C]
+	(No symbol) [0x00E3ACC6]
+	(No symbol) [0x00E16F68]
+	(No symbol) [0x00E180CD]
+	GetHandleVerifier [0x011C3832+2506274]
+	GetHandleVerifier [0x011F9794+2727300]
+	GetHandleVerifier [0x011FE36C+2746716]
+	GetHandleVerifier [0x00FF6690+617600]
+	(No symbol) [0x00EEC712]
+	(No symbol) [0x00EF1FF8]
+	(No symbol) [0x00EF20DB]
+	(No symbol) [0x00EFC63B]
+	BaseThreadInitThunk [0x761200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x778B7BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x778B7B8E+238]
+
+d:\Automatizacion programas\SeleniumPython\clase5\select_language.py:12: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  cls.driver = webdriver.Chrome(
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 6.96 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
