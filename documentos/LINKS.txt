@@ -1,0 +1,7 @@
+https://www.selenium.dev/selenium/docs/api/py/webdriver_support/selenium.webdriver.support.expected_conditions.html
+
+
+https://selenium-python.readthedocs.io/waits.html
+
+
+https://www.guru99.com/implicit-explicit-waits-selenium.html
